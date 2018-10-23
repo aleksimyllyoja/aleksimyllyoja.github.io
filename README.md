@@ -1,3 +1,3 @@
 This is my personal site
 
-http://aleksimyllyoja.github.io
+https://å.cc
