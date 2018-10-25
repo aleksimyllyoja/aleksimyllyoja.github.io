@@ -2,12 +2,9 @@
 <html>
 <head>
 <title>Aleksi Myllyoja's Personal Site</title>
-<style>
-  img {max-width: 100vw; max-height: 80vh;}
-  *::selection { background: red; color: white; }
-</style>
+<style>img {max-width: 100vw; max-height: 80vh;} *::selection { background: red; color: white; }</style>
 </head>
-<body contenteditable="true"></body>
+<body></body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
 <script id="content" src="content.md"></script>
 <script>document.body.innerHTML = (new showdown.Converter()).makeHtml(S);</script>
