@@ -14,8 +14,8 @@ Plotter drawings
 
 _2018_
 
-![](https://i.imgur.com/2cnuPdZ.png)
-![](https://i.imgur.com/mhZFR57.png)
+![](https://i.imgur.com/EwQ8A2f.png)
+![](https://i.imgur.com/Y7fmTOC.png)
 
 ***
 
