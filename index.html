@@ -2,10 +2,32 @@
 <html>
 <head>
 <title>Aleksi Myllyoja's Personal Site</title>
-<style>img {max-width: 100vw; max-height: 80vh;} *::selection { background: red; color: white; }</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
+<style>
+  body { font-size: 1.5em;}
+  a { color: blue }
+  img { max-width: 100vw; max-height: 80vh; }
+  *::selection { background: lightgrey;  }
+</style>
 </head>
 <body></body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
 <script id="content" src="content.md"></script>
-<script>document.body.innerHTML = (new showdown.Converter()).makeHtml(S);</script>
+<script>
+  var pages = S.split("***");
+  var c = new showdown.Converter();
+  function u() {
+    var page = window.location.hash ? window.location.hash.substring(1) : 0;
+    var content = c.makeHtml(pages[page]);
+    if(pages.length>1) {
+      ls = "Pages: ";
+      for(var i=0;i<pages.length;i++) {
+        ls += "_["+i+"](#"+i+")_ ";
+      }
+      content += c.makeHtml(ls);
+    }
+    document.body.innerHTML = content;
+  }
+  u();
+  window.addEventListener('hashchange', u);
+</script>
 </html>
