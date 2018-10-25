@@ -27,4 +27,10 @@ _2018_
 
 ![](https://i.imgur.com/faK4WFm.png)
 
+Test on plotter
+
+_2017_
+
+![](https://i.imgur.com/UATfw1y.jpg)
+
 `;
