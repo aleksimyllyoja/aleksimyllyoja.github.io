@@ -19,10 +19,8 @@
     var page = window.location.hash ? window.location.hash.substring(1) : 0;
     var content = c.makeHtml(pages[page]);
     if(pages.length>1) {
-      ls = "Pages: ";
-      for(var i=0;i<pages.length;i++) {
-        ls += "_["+i+"](#"+i+")_ ";
-      }
+      var ls = "Pages: ";
+      for(var i=0;i<pages.length;i++) ls += "_["+i+"](#"+i+")_ ";
       content += c.makeHtml(ls);
     }
     document.body.innerHTML = content;
