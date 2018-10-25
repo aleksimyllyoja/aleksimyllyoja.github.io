@@ -26,6 +26,7 @@
       content += c.makeHtml(ls);
     }
     document.body.innerHTML = content;
+    window.scrollTo(0, 0);
   }
   u();
   window.addEventListener('hashchange', u);
