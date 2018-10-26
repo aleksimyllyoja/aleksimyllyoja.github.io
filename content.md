@@ -1,5 +1,10 @@
 S = `
 
+This is Aleksi Myllyoja's personal site. Feel free to [contact](mailto:aleksi.myllyoja@gmail.com) me for whatever reason.
+
+---
+
+
 [Computer generated faces](jack-of-diamonds/#Faces)
 
 _23.10.2018_
