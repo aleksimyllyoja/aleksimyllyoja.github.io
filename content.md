@@ -4,14 +4,6 @@ This is Aleksi Myllyoja's personal site. Feel free to [contact](mailto:aleksi.my
 
 ---
 
-[Fractals](jack-of-diamonds#Fractals)
-
-_28.10.2018_
-
-![](https://i.imgur.com/nx0L5jb.png)
-
-***
-
 [Computer generated faces](jack-of-diamonds/#Faces)
 
 _23.10.2018_
