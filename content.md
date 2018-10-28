@@ -8,7 +8,7 @@ This is Aleksi Myllyoja's personal site. Feel free to [contact](mailto:aleksi.my
 
 _28.10.2018_
 
-![](https://i.imgur.com/3l9GQm2.png)
+![](https://i.imgur.com/nx0L5jb.png)
 
 ***
 
