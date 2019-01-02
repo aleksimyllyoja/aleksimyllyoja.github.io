@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      overflow: hidden;
+      cursor: none;
+    }
+
+    canvas {
+      position: absolute;
+      background: transparent;
+      z-index: 100;
+    }
+
+    #a {
+      filter: grayscale(0.9);
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background-color: black;
+      background-size: cover;
+      background-position: center bottom;
+    }
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/screenfull.js/4.0.0/screenfull.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div id="a"></div>
+  <canvas id="c"></canvas>
+</body>
+
+<script>
+  var c = document.getElementById("c");
+  var ctx = c.getContext("2d");
+
+  var H = c.height = window.innerHeight;
+  var W = c.width = window.innerWidth;
+
+  var interval = 4*1000;
+	var refresh;
+  var staring = true;
+  var cpr = H*0.5;
+
+	const duration = 1000 * 4;
+
+	const giphy = {
+		baseURL: "https://api.giphy.com/v1/gifs/",
+		key: "dc6zaTOxFJmzC",
+		tag: window.location.hash ? window.location.hash.replace('#', '') : 'nature',
+		type: "random",
+		rating: "r"
+	};
+
+	const $gif_wrap = $("#a");
+
+	let giphyURL = encodeURI(
+    giphy.baseURL +
+      giphy.type +
+			"?api_key=" +
+			giphy.key +
+			"&tag=" +
+			giphy.tag +
+			"&rating=" +
+			giphy.rating
+	);
+
+	var newGif = () => $.getJSON(giphyURL, json => renderGif(json.data));
+	var renderGif = _giphy => {
+    var url;
+    if(!staring) {
+      url = 'https://media0.giphy.com/media/1iqiuMwuuRb5x9G4p8/giphy.gif?cid=3640f6095c2d1fc46c383263490a35eb';
+    } else {
+      url = _giphy.image_original_url;
+    }
+    staring = !staring;
+    $gif_wrap.css({
+			"background-image": 'url("' + url + '")'
+		});
+		refreshRate();
+	};
+
+	var refreshRate = () => {
+		clearInterval(refresh);
+		refresh = setInterval(function() {
+      newGif();
+		}, duration);
+	};
+
+	newGif();
+
+  function d() {
+    ctx.fillRect(0, 0, c.width, c.height);
+    ctx.save();
+    ctx.beginPath();
+    ctx.fillStyle = "transparent";
+    ctx.arc(
+      W/2, H/2,
+      cpr,
+      0, 2 * Math.PI, false
+    );
+    ctx.closePath();
+    ctx.clip();
+
+    ctx.clearRect(0, 0, c.width, c.height);
+    ctx.restore();
+
+    window.requestAnimationFrame(d);
+  }
+
+  d();
+
+  document.onkeypress = function(e) { if(e.key == 'f') screenfull.toggle() };
+  window.onresize = function() {
+    H = c.height = window.innerHeight;
+    W = c.width = window.innerWidth;
+  }
+
+</script>
+</html>
