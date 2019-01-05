@@ -4,6 +4,16 @@ This is Aleksi Myllyoja's personal site. Feel free to [contact](mailto:aleksi.my
 
 ---
 
+[LSTM generated poems out of GIFs](montage_1/)
+
+
+_5.1.2019_
+
+![](https://i.imgur.com/njD9Gus.jpg)
+![](https://i.imgur.com/x1ePoAR.jpg)
+
+***
+
 [Computer generated faces](jack-of-diamonds/#Faces)
 
 _23.10.2018_
