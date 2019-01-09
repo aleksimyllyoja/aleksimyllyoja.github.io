@@ -9,8 +9,7 @@ This is Aleksi Myllyoja's personal site. Feel free to [contact](mailto:aleksi.my
 
 _5.1.2019_
 
-![](https://i.imgur.com/njD9Gus.jpg)
-![](https://i.imgur.com/x1ePoAR.jpg)
+![youtube video](https://www.youtube.com/watch?v=MoYVimPalas =800x600)
 
 ***
 
