@@ -4,6 +4,12 @@ This is Aleksi Myllyoja's personal site. Feel free to [contact](mailto:aleksi.my
 
 ---
 
+_14.7.2019_
+
+![](https://i.imgur.com/xPmMiGw.jpg)
+
+***
+
 Experiment on pinhole camera
 
 _22.4.2019_
