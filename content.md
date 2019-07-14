@@ -6,6 +6,7 @@ This is Aleksi Myllyoja's personal site. Feel free to [contact](mailto:aleksi.my
 
 _14.7.2019_
 
+![](https://i.imgur.com/35BZV8F.jpg)
 ![](https://i.imgur.com/xPmMiGw.jpg)
 
 ***
