@@ -2,6 +2,10 @@ S = `
 
 This is Aleksi Myllyoja's personal site. Feel free to [contact](mailto:aleksi.myllyoja@gmail.com) me for whatever reason.
 
+[Music recommendation: laatu.cc](http://laatu.cc/)
+
+_17.7.2019_
+
 ---
 
 [Utah teapot](https://github.com/aleksimyllyoja/generative)
