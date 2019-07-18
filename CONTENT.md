@@ -39,7 +39,7 @@ _22.4.2019_
 
 _22.4.2019_
 
-![](https://i.imgur.com/eXQgKx7.png)
+![](https://i.imgur.com/BRJ7OoB.png)
 
 ***
 
