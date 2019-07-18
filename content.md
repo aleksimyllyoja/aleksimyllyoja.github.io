@@ -3,14 +3,15 @@ S = `
 This is Aleksi Myllyoja's personal site. Feel free to [contact](mailto:aleksi.myllyoja@gmail.com) me for whatever reason.
 
 ---
+@ Music recommendation
 
-[Music recommendation: laatu.cc](http://laatu.cc/)
+[laatu.cc](http://laatu.cc/)
 
 _17.7.2019_
 
 ***
 
-[Utah teapot](https://github.com/aleksimyllyoja/generative)
+@ [Utah teapot](https://github.com/aleksimyllyoja/generative)
 
 _14.7.2019_
 
@@ -18,13 +19,15 @@ _14.7.2019_
 
 ***
 
+@ Untitled
+
 _14.7.2019_
 
 ![](https://i.imgur.com/35BZV8F.jpg)
 
 ***
 
-Experiment on pinhole camera
+@ Experiment on pinhole camera
 
 _22.4.2019_
 
@@ -32,7 +35,7 @@ _22.4.2019_
 
 ***
 
-[3D experiments](http://xn--5ca.cc/growth/)
+@ [3D experiments](http://xn--5ca.cc/growth/)
 
 _22.4.2019_
 
@@ -40,7 +43,7 @@ _22.4.2019_
 
 ***
 
-[LSTM generated poems out of GIFs](montage_1/)
+@ [LSTM generated poems out of GIFs](montage_1/)
 
 _5.1.2019_
 
@@ -48,7 +51,7 @@ _5.1.2019_
 
 ***
 
-[Computer generated faces](jack-of-diamonds/#Faces)
+@ [Computer generated faces](jack-of-diamonds/#Faces)
 
 _23.10.2018_
 
@@ -57,7 +60,7 @@ _23.10.2018_
 
 ***
 
-Plotter drawings
+@ Plotter drawings
 
 * [2D graphics algorithms in Python](https://github.com/aleksimyllyoja/generative) / [in Haskell](https://github.com/aleksimyllyoja/haskell-graphics)
 * [Helper tool in Haskell](https://github.com/aleksimyllyoja/teos)
@@ -69,7 +72,7 @@ _2018_
 
 ***
 
-[Computer generated faces 0.5](https://github.com/aleksimyllyoja/generative)
+@ [Computer generated faces 0.5](https://github.com/aleksimyllyoja/generative)
 
 _2018_
 
@@ -79,7 +82,7 @@ _2018_
 
 ***
 
-Test on plotter
+@ Test on plotter
 
 _2017_
 
