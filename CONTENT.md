@@ -3,6 +3,15 @@ S = `
 This is Aleksi Myllyoja's personal site. Feel free to [contact](mailto:aleksi.myllyoja@gmail.com) me for whatever reason.
 
 ---
+
+@ A Cow
+
+_18.7.2019_
+
+![](https://i.imgur.com/NXZ7QJ3.png)
+
+***
+
 @ Music recommendation
 
 [laatu.cc](http://laatu.cc/)
