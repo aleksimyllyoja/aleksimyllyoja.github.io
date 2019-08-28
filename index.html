@@ -2,15 +2,9 @@
 <html>
 <head>
 <title>å.cc</title>
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 <style>
-  body { font-size: 1.5em; font-family: 'Playfair Display', serif; }
   #c { margin: 0 auto; max-width: 1200px; }
-  a { color: black; }
-  em { font-size: 0.8em; }
-  hr { margin: 2em 0; }
-  p { letter-spacing: 0.02em; }
-  a.lh { font-style: italic; }
+  a { color: blue; }
   img, iframe { max-width: 100%; max-height: 90vh; display: block; margin: 0 auto; }
   *::selection { background: blue; color: yellow; }
 </style>
@@ -20,24 +14,7 @@
 <script src="https://cdn.jsdelivr.net/npm/showdown-youtube@1.2.1/dist/showdown-youtube.min.js"></script>
 <script id="content" src="CONTENT.md"></script>
 <script>
-  var linker = {
-    type: 'lang',
-    filter: function (text, converter, options) {
-      var lines = text.split("\n");
-      var ats = 0;
-      for(var i=lines.length-1; i>=0; i--) {
-        var line = lines[i];
-        if(line.startsWith('@')) {
-          lines[i] = lines[i].replace('@', '');
-          lines[i] = lines[i]+` - <a name='${ats}' class='lh' href='#${ats}'>link here</a>`;
-          ats++;
-        }
-      }
-      return lines.join("\n");
-    }
-  };
-
-  var c = new showdown.Converter({extensions: ['youtube', linker]});
+  var c = new showdown.Converter({extensions: ['youtube']});
   document.getElementById('c').innerHTML = c.makeHtml(S);
 </script>
 
