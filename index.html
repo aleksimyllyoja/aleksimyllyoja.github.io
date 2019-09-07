@@ -7,12 +7,12 @@
 <style>
   html { background: #fbf8f3; }
   body { margin: 1em; text-transform: uppercase; }
-  #c { margin: 0 auto; font-family: sans-serif; }
+  #c { margin: 0 auto; font-family: sans-serif; max-width: 1080px; }
   h2 { font-size: 2em; margin: 2em 0; text-align: left; font-weight: 100}
-  p { font-size: 1.8em; margin: 2em 0; font-weight: 100; }
-  a { text-transform: lowercase; text-decoration: none; font-weight: 100; color: black; border-bottom: 3px solid transparent; }
-  a.selected { border-bottom: 3px solid; }
-  img, iframe { max-width: 100%; width: 100%; height: auto; display: block; margin: 0 auto; }
+  p { font-size: 1.8em; margin: 2em 0; font-weight: 400; }
+  a { text-transform: lowercase; text-decoration: none; font-weight: 100; color: black; border-bottom: 3px solid transparent; transition: all 0.2s ease-out; }
+  a.selected, a:hover { border-bottom: 3px solid; }
+  img, iframe { max-width: 100%; width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.5; }
   *::selection { background: #eee; color: gray; }
 
   .right {
@@ -26,7 +26,7 @@
   #menu {
     text-align: justify;
     letter-spacing: 0.05em;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 3.5em;
     line-height: 2em;
   }
@@ -46,7 +46,6 @@
 
   #menu a {
     padding: 0.1em;
-    transition: all 0.2s ease-out;
   }
 
   #video {
