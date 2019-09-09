@@ -8,19 +8,27 @@
 
   @font-face {
     font-family: 'AUTHENTIC SANS';
-    src: url('fonts/AUTHENTICSans-60.woff2') format('woff2'),
-         url('fonts/AUTHENTICSans-60.woff') format('woff'),
-         url("fonts/AUTHENTICSans-60.otf") format("opentype");
+    src: url('fonts/WOFF/AUTHENTICSans-90.woff2') format('woff2'),
+         url('fonts/WOFF/AUTHENTICSans-90.woff') format('woff'),
+         url("fonts/OTF/AUTHENTICSans-90.otf") format("opentype");
   }
 
+  @font-face {
+    font-family: 'AUTHENTIC SANS 60';
+    src: url('fonts/WOFF/AUTHENTICSans-60.woff2') format('woff2'),
+         url('fonts/WOFF/AUTHENTICSans-60.woff') format('woff'),
+         url("fonts/OTF/AUTHENTICSans-60.otf") format("opentype");
+  }
+
+  * { color: black; }
   body { margin: 1em; text-transform: uppercase; }
-  #c { margin: 0 auto; font-family: 'AUTHENTIC SANS', sans-serif; max-width: 1080px; }
-  h2 { font-size: 2em; margin: 2em 0; text-align: left; font-weight: 100}
-  p { font-size: 1.8em; margin: 2em 0; font-weight: 400; }
-  a { text-transform: lowercase; text-decoration: none; font-weight: 100; color: black; border-bottom: 3px solid transparent; transition: all 0.1s ease-out; }
-  a.selected, a:hover { border-bottom: 3px solid; }
+  #c { margin: 0 auto; font-family: 'AUTHENTIC SANS', sans-serif; max-width: 960px; }
+  h2 { font-size: 2em; margin: 2em 0; text-align: left; font-family: 'AUTHENTIC SANS 60', sans-serif;}
+  p { font-size: 1.8em; margin: 2em 0; }
+  a { text-transform: lowercase; text-decoration: none; }
+  a.selected, a:hover { text-decoration: underline; }
   img, iframe { max-width: 100%; width: 100%; height: auto; display: block; margin: 0 auto; }
-  *::selection { background: #eee; color: gray; }
+  *::selection { background: yellow; color: black; }
 
   .right {
     text-align: right;
@@ -31,13 +39,11 @@
   }
 
   #menu {
-    text-align: justify;
-    letter-spacing: 0.05em;
-    font-weight: 300;
-    font-size: 3.5em;
-    line-height: 2em;
+    font-size: 4em;
+    line-height: 1.4em;
+    margin: 0.8em 0;
+    letter-spacing: 0.02em;
   }
-
 
   @media only screen and (max-width: 720px) {
     #menu {
